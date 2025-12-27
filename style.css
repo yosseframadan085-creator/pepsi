@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #0162be;
+    color: #fff;
+height: 100vh;
+overflow-x: hidden;
+}
+
+.content {
+    margin: 0 5rem;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+
+    
+}
+nav .logo{
+    width: 50px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul a{
+    padding: 20px;
+    margin: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+nav ul a:hover { 
+    color: #fe0000;
+}
+.contaner{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height:70% ;
+ 
+}
+.contaner img {
+   width: 220px;
+   animation:animation1 1s ease-out ;
+}
+.content-text h1{
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.content-text h1 span {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+}
+.content-text p {
+  width: 70%;
+  margin-bottom: 30px;
+}
+ .btn{
+  background-color: #fff;
+  text-decoration: none;
+padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 40px;
+  color: #000000;
+  transition: all 0.5s;
+
+}
+.btn:hover{
+   background-color: transparent;
+border: 1px solid #fff;
+   color: #ffffff;
+
+}
+.social{
+    margin-left: 3rem;
+    animation:animation1 1s ease-out ;
+}
+.social i{
+    color: #fff;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+.im img{
+    display: block;
+    width: 120px;
+   margin: auto;
+   margin-top: 50px;
+   margin-left: 300;
+   animation:animation2 1s ease-out ;
+}
+@keyframes animation1{
+    0%{
+        transform: translatex(500px);
+    }
+         100% {
+            transform: translatex(0px);
+         }
+}
+@keyframes animation2 {
+    0% {
+        transform: translatey(200px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+@media(max-width: 950px){
+    .content{
+        margin: 0 1rem;
+    }
+        nav ul a {
+            padding: 10px;
+        }
+                  .contaner {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 2rem 0 0 ;
+                  }
+                          .contaner img {
+                            width: 130px;
+                          }
+                                      .content-text p {
+                                       width: 100%;
+                                      }
+                                                 .content-text{
+                                                margin-bottom: 2rem;
+                                             }
+                                                             
+                                                  .social {
+                                                    margin-left: 0;
+                                                    margin-bottom: 15px;
+                                                  }
+
+                                                  @media (max-width: 681px){
+                                            nav{
+                                                display: block;
+
+
+                                            }
+                                                         nav .logo {
+                                                                                            
+                                            display: block;
+                                            margin: 0 auto 15px;
+                                            
+                                                          }
+                                                          nav ul{
+                                                            justify-content: center;
+
+                                                          }
+                                                          nav ul a {
+                                                          font-size: 8px;
+                                                          padding: 0px;
+                                                          
+                                                            
+                                                                 }
+                                                        .im img {
+                                                            margin-top: 55px;
+                                                        }
+                                                  }
+
+                                                  
+
+                                                  
+}
